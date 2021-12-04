@@ -15,7 +15,7 @@ function start() {
 	client.user?.setActivity({ name: "TO THE MOON 🚀", type: "COMPETING" })
 
 	updatedPrices().catch(error => console.error(error))
-	setInterval(() => updatedPrices().catch(error => console.error(error)), 10 * 60 * 1000)
+	setInterval(() => updatedPrices().catch(error => console.error(error)), 30 * 60 * 1000)
 }
 
 async function updatedPrices() {
